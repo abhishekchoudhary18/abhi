@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:regular,bold,italic&subset=latin,latin-ext');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  height: 100vh;
+  background-color: #1b1b1f;
+  cursor: none;
+  font-family: 'Roboto Mono';
+  color: #fff;
+}
+
+/* =================containers========================= */
+
+.headerContainer{
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10vw;
+  padding-top: 1vh;
+}
+
+
+.foot-body{
+  display: flex;
+  direction: row;
+  height: 90vh;
+}
+
+
+.bodyContainer{
+  margin-left: 5vw;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  color:white;
+  flex: 2 1 auto;
+}
+
+
+
+.footerContainer{
+  min-width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  margin-top: 5vh;
+  flex: 0 1 auto;
+}
+
+/* =====================cursor======================== */
+
+.cursor-dot{
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: solid white;
+  
+}
+
+.cursor-outline{
+  width: 100px;
+  height: 100px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  /* box-shadow:
+    0 0 60px 20px #fff, 
+    0 0 100px 30px #f0f;  */
+ 
+}
+
+.cursor-dot,
+.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+/* ====================cursor text=============== */
+
+.cursor-text{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+.text{
+  position: absolute;
+  font-size: small;
+  font-weight: lighter;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+  line-height: 35px;
+  font-family: sans-serif;
+}
+
+@keyframes rotateText {
+
+  0%
+  {
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+  
+}
+
+.text span{
+  position: absolute;
+  left: 50%;
+  font-size: 1em;
+  transform-origin: 0 50px;
+}
+
+
+/* ===================contact form=================== */
+
+input,textarea{ 
+  border:0;
+  background: #00000079;
+  width:100%;
+  padding:20px 10px 5px 10px;
+  font-size:16px;
+  color:#fff;
+  margin-bottom: 10px;
+}
+input:focus{ 
+ border:none;	
+ background:black;
+}
+
+textarea{
+  resize: none;
+}
+
+textarea:focus{ 
+  border:none;	
+ background:black;
+ }
+
+ button{
+  background-color: black;
+  padding: 10px;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+  font-family: "Roboto Mono";
+ }
+
+ .contactForm{
+  width: 30%;
+  margin-top: 50px;
+ }
+
+ /* =========================header list================================ */
+
+ 
+.header-list { 
+   
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+ul.header-list > li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+ul.header-list > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+ul.header-list > li > a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+ul.header-list > li > a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+
+ /*========================================footer icons==============================- */
+
+ .support {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+.support a {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+  mix-blend-mode: difference;
+}
+.support a:hover {
+  transform: scale(1.2);
+}
+
+
+
