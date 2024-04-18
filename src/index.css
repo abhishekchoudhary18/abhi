@@ -240,3 +240,12 @@ ul.header-list > li > a:hover:after {
 
 
 
+.logo{
+  transform: rotate(90deg);
+  transition: transform 2s ease-in-out;
+
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}

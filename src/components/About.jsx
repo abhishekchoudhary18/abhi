@@ -1,3 +1,17 @@
 export default function About() {
-    return<>about</>
+  const currentDate = new Date();
+  const targetDate = new Date("07/15/2021");
+  const yearsDifference = currentDate.getFullYear() - targetDate.getFullYear();
+  console.log(yearsDifference);
+  return (
+    <div>
+      <p>
+        {" "}
+        I am a Electronics Engineer turned Web Developer and I believe i am
+        doing a prettty good job in being one. I started my journey in Webdev
+        around {yearsDifference} years ago. here is my short resume which will
+        give a quick intro about me.
+      </p>
+    </div>
+  );
 }
