@@ -241,12 +241,18 @@ ul.header-list > li > a:hover:after {
   transform: scale(1.2);
 }
 
-
+.resume{
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border: solid 0.1px grey;
+  padding: 1px;
+}
 
 .logo{
   transform: rotate(90deg);
   transition: transform 2s ease-in-out;
-
+  cursor: pointer;
 }
 
 .logo:hover {

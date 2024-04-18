@@ -9,8 +9,11 @@ export default function About() {
         {" "}
         I am a Electronics Engineer turned Web Developer and I believe i am
         doing a prettty good job in being one. I started my journey in Webdev
-        around {yearsDifference} years ago. here is my short resume which will
-        give a quick intro about me.
+        around {yearsDifference} years ago. here is my short{" "}
+        <a href="resume.pdf" download="Abhishek Choudhary" className="resume">
+          resume
+        </a>{" "}
+        which will give a quick intro about me.
       </p>
       <img src="resume.jpg" style={{ height: "1000px", marginTop: "50px" }} />
     </div>
