@@ -10,7 +10,11 @@ export default function Layout() {
         <Header />
       </div>
       <div className="bodyContainer">
-        <img className="logo" src="logo.png" onClick={() => navigate("/")} />
+        <img
+          className="logo"
+          src="logo.png"
+          onClick={() => navigate("/abhi")}
+        />
       </div>
       <div className="foot-body">
         <div className="bodyContainer">
