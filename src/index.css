@@ -18,7 +18,7 @@ body{
 /* =================containers========================= */
 
 .headerContainer{
-  height: 10vh;
+  /* height: 10vh; */
   display: flex;
   justify-content: flex-end;
   margin-right: 10vw;
@@ -29,13 +29,13 @@ body{
 .foot-body{
   display: flex;
   direction: row;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 
 .bodyContainer{
   margin-left: 5vw;
-  padding-top: 5vh;
+  /* padding-top: 5vh; */
   padding-left: 5vw;
   color:white;
   flex: 2 1 auto;
@@ -51,6 +51,9 @@ body{
   gap: 1vh;
   margin-top: 5vh;
   flex: 0 1 auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 
 /* =====================cursor======================== */

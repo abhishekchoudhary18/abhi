@@ -4,7 +4,7 @@ export default function About() {
   const yearsDifference = currentDate.getFullYear() - targetDate.getFullYear();
   console.log(yearsDifference);
   return (
-    <div>
+    <div style={{ margin: "50px" }}>
       <p>
         {" "}
         I am a Electronics Engineer turned Web Developer and I believe i am
@@ -12,6 +12,7 @@ export default function About() {
         around {yearsDifference} years ago. here is my short resume which will
         give a quick intro about me.
       </p>
+      <img src="resume.jpg" style={{ height: "1000px", marginTop: "50px" }} />
     </div>
   );
 }
